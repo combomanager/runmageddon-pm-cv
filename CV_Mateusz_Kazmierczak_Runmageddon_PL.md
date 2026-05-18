@@ -28,7 +28,7 @@ Koordynowałem delivery produktu i współpracę zespołu 6 osób (deweloperzy, 
 ### MOBEE DICK — Agencja UX
 **General Manager** | grudzień 2021 – kwiecień 2025
 
-Prowadziłem operacje jednej z rozpoznawalnych polskich agencji UX. Klienci enterprise: banki, ubezpieczyciele, korporacje, e-commerce. Przychód roczny ~5 mln PLN. Zespół do 25 osób. Koordynowałem projekty i harmonogramy w Asanie.
+Prowadziłem operacje jednej z rozpoznawalnych polskich agencji UX. Klienci enterprise: banki, ubezpieczyciele, korporacje, e-commerce. Przychód roczny ~5 mln PLN. Zespół do 25 osób. Prowadziłem projekty w Asanie — taski, roadmapy, harmonogramy i raportowanie postępów.
 
 - Wygrałem przetarg publiczny na 14 mln PLN brutto dla Ministerstwa Finansów (umowa ramowa 2025–2028) — poprowadziłem cały proces od zera: dokumentacja przetargowa, case study, strategia cenowa, złożenie oferty. Najwyższy wynik, najwyższa cena. Pokonanie 2 finalistów.
 - Zbudowałem relację z klientem rządowym, która przełożyła się na wzrost wartości kontraktu z 1 mln do 14 mln PLN (14× wzrost) dzięki konsekwentnemu dowożeniu i bezpośredniemu budowaniu relacji, w tym wizytom w Ministerstwie
@@ -74,7 +74,7 @@ Prowadziłem pełen zakres operacji marketingowych, medialnych, sponsorskich i s
 
 ## KOMPETENCJE I NARZĘDZIA
 
-**Zarządzanie projektami:** Planowanie i harmonogramy · Koordynacja wielu zespołów i interesariuszy · Zarządzanie ryzykiem i priorytetami · Raportowanie postępów · Zamówienia publiczne
+**Zarządzanie projektami:** Taski, roadmapy i harmonogramy · Koordynacja wielu zespołów i interesariuszy · Zarządzanie ryzykiem i priorytetami · Raportowanie postępów · Zamówienia publiczne
 **Marketing i eventy:** Organizacja akcji promocyjnych i imprez masowych · Sponsoring i ticketing · Kampanie i relacje z mediami · Sprzedaż B2B
 **Zarządzanie:** Kierowanie zespołami (do 25 osób) · Projektowanie i optymalizacja procesów · Zarządzanie relacjami z klientami
 **Narzędzia:** Asana · ClickUp · Figma · Google Workspace · Slack · Tally.so · Canva

@@ -8,7 +8,7 @@ Polska | matekaz@outlook.com | +48 732 186 476 | [linkedin.com/in/combomanager](
 
 ## PODSUMOWANIE ZAWODOWE
 
-Manager i lider operacji z 14-letnim doświadczeniem w koordynacji projektów od planowania po realizację — w sporcie, marketingu, agencjach i startupie. 6 lat w ekstraklasie koszykówki (Energa Czarni Słupsk 5,5 roku + Asseco Arka): imprezy masowe (Rekord Guinnessa 129,6 dB), sponsoring, ticketing i kampanie. W agencji UX zarządzałem do 25 osób i 3–4 projektami enterprise równolegle; wygrałem przetarg na 14 mln PLN dla Ministerstwa Finansów. W AION: wzrost skali operacji **8×** w 12 miesięcy. Łączę planowanie z egzekucją pod presją terminów i wielu interesariuszy. Najlepiej działam w dynamicznym środowisku, gdzie liczy się porządek w procesach i przepływ informacji między zespołami.
+Manager i lider operacji z 14-letnim doświadczeniem w koordynacji projektów od planowania po realizację — w sporcie, marketingu, agencjach i startupie. 6 lat w ekstraklasie koszykówki (Energa Czarni Słupsk 5,5 roku + Asseco Arka Gdynia): imprezy masowe (Rekord Guinnessa 129,6 dB), sponsoring, ticketing i kampanie. W agencji UX zarządzałem do 25 osób i 3–4 projektami enterprise równolegle; wygrałem przetarg na 14 mln PLN dla Ministerstwa Finansów. W AION: wzrost skali operacji **8×** w 12 miesięcy. Łączę planowanie z egzekucją pod presją terminów i wielu interesariuszy. Najlepiej działam w dynamicznym środowisku, gdzie liczy się porządek w procesach i przepływ informacji między zespołami.
 
 ---
 
@@ -55,7 +55,7 @@ Zbudowałem i prowadziłem kawiarnię od zera w Chmielnie na Kaszubach — od re
 ### ASSECO ARKA GDYNIA — Koszykówka zawodowa (Ekstraklasa)
 **Konsultant zarządu ds. marketingu** | październik 2019 – kwiecień 2020 *(równolegle z Rio Creativo)*
 
-- Opracowałem strategię marketingową we współpracy z wiceprezesem Asseco Przemysławem Sęczkowskim: audyt marki, plan marketingowy, restrukturyzacja oferty sponsorskiej, wdrożenie nowego operatora biletowego. Efekt: wzrost frekwencji i nowe partnerstwa sponsorskie (przerwane przez COVID-19).
+- Opracowałem strategię marketingową we współpracy z wiceprezesem klubu Przemysławem Sęczkowskim (Asseco Arka Gdynia): audyt marki, plan marketingowy, restrukturyzacja oferty sponsorskiej, wdrożenie nowego operatora biletowego. Efekt: wzrost frekwencji i nowe partnerstwa sponsorskie (przerwane przez COVID-19).
 
 ---
 

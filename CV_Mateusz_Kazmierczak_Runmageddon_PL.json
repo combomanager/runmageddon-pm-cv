@@ -1,0 +1,407 @@
+{
+  "$schema": "https://rxresu.me/schema.json",
+  "version": "5.0.0",
+  "picture": {
+    "hidden": false,
+    "url": "https://rxresu.me/api/uploads/019c8b14-ce2f-765e-b259-f7fff71f76c8/pictures/1779092474070.jpeg",
+    "size": 114,
+    "rotation": 0,
+    "aspectRatio": 1,
+    "borderRadius": 0,
+    "borderColor": "rgba(0, 0, 0, 0)",
+    "borderWidth": 0,
+    "shadowColor": "rgba(0, 0, 0, 0)",
+    "shadowWidth": 0
+  },
+  "basics": {
+    "name": "Mateusz Kaźmierczak",
+    "headline": "Manager | Eventy · Sport · Marketing · Operacje · Produkty · UX",
+    "email": "matekaz@outlook.com",
+    "phone": "+48 732 186 476",
+    "location": "Polska",
+    "website": {
+      "url": "https://www.linkedin.com/in/combomanager/",
+      "label": "LinkedIn"
+    },
+    "customFields": []
+  },
+  "summary": {
+    "title": "Podsumowanie zawodowe",
+    "columns": 1,
+    "hidden": false,
+    "content": "<p>Manager i lider operacji z 14-letnim doświadczeniem w koordynacji projektów od planowania po realizację – w sporcie, marketingu, agencjach i startupie. 6 lat w ekstraklasie koszykówki (Energa Czarni Słupsk 5,5 roku + Asseco Arka): imprezy masowe (Rekord Guinnessa 129,6 dB), sponsoring, ticketing i kampanie. W agencji UX zarządzałem zespołem do 25 osób i 3-4 projektami enterprise równolegle; wygrałem przetarg na 14 mln PLN dla Ministerstwa Finansów.</p><p>Łączę planowanie z egzekucją pod presją terminów i wielu interesariuszy. Najlepiej działam w dynamicznym środowisku, gdzie liczy się porządek w procesach i przepływ informacji między zespołami.</p>"
+  },
+  "sections": {
+    "profiles": {
+      "title": "Profile",
+      "columns": 1,
+      "hidden": true,
+      "items": [
+        {
+          "id": "prf-linkedin-runm-001",
+          "hidden": false,
+          "icon": "",
+          "iconColor": "",
+          "network": "LinkedIn",
+          "username": "combomanager",
+          "website": {
+            "url": "https://www.linkedin.com/in/combomanager/",
+            "label": "linkedin.com/in/combomanager",
+            "inlineLink": false
+          }
+        }
+      ]
+    },
+    "experience": {
+      "title": "Doświadczenie",
+      "columns": 1,
+      "hidden": false,
+      "items": [
+        {
+          "id": "exp-aionmind-runm-001",
+          "hidden": false,
+          "company": "AION – startup",
+          "position": "Product Owner / Chief of Staff",
+          "location": "Polska",
+          "period": "marzec 2025 – marzec 2026",
+          "website": {
+            "url": "https://aionmind.com/",
+            "label": "aionmind.com",
+            "inlineLink": false
+          },
+          "description": "<p><em>Aplikacja B2C, SaaS B2B, kursy online. Zespół 6-7 osób. Wzrost skali operacji 8× w 12 miesięcy — intensywne premiery pod presją terminów.</em></p><ul><li><p>Koordynowałem pracę zespołów produktu i wsparcia przy jednoczesnym prowadzeniu trzech strumieni działań (B2C, B2B, kursy online) — harmonogramy, priorytety i raportowanie postępów pod presją terminów</p></li><li><p>Współpraca z partnerami i podwykonawcami </p></li><li><p>Prowadziłem komunikację z klientami B2B, pętle feedbacku (ankiety) i wsparcie społeczności 3000 osób na Discord</p></li><li><p>Koordynowałem compliance prawny (polityka prywatności, regulamin) oraz negocjacje partnerstwa z Biznes Ligą Runamageddon</p></li></ul><p></p>",
+          "roles": []
+        },
+        {
+          "id": "exp-mobeedick-runm-002",
+          "hidden": false,
+          "company": "Mobee Dick – agencja UX",
+          "position": "PM -> General Manager",
+          "location": "Polska",
+          "period": "grudzień 2021 – kwiecień 2025",
+          "website": {
+            "url": "https://www.mobeedick.com/",
+            "label": "mobeedick.com",
+            "inlineLink": false
+          },
+          "description": "<p><em>Jedna z rozpoznawalnych polskich agencji UX. Klienci enterprise: banki, ubezpieczyciele, korporacje, e-commerce. Przychód roczny ~5 mln PLN. Zespół do 25 osób. Koordynowałem projekty i harmonogramy, prowadziłem newbiz, budowałem relacje z klientami i w zespole</em></p><ul><li><p>Wygrałem przetarg publiczny na 14 mln PLN brutto dla Ministerstwa Finansów (umowa ramowa 2025–2028) – poprowadziłem cały proces od zera: dokumentacja przetargowa, case study, strategia cenowa, złożenie oferty. Najwyższy wynik, najwyższa cena. Pokonanie 2 finalistów.</p></li><li><p>Zbudowałem relację z klientem rządowym, która przełożyła się na wzrost wartości kontraktu z 1 mln do 14 mln PLN (14× wzrost) dzięki konsekwentnemu dowożeniu i bezpośredniemu budowaniu relacji, w tym wizytom w Ministerstwie</p></li><li><p>Poprowadziłem redesign UX portalu podatki.gov.pl i procesu „Twój ePIT” (projekt za 1 mln PLN,). Przekształcenie procesu, w którym użytkownicy nie mogli samodzielnie złożyć deklaracji, w self-service – system używany przez miliony polskich podatników</p></li><li><p>Zarządzałem 3–4 projektami UX enterprise równolegle dla klientów z sektorów bankowego, ubezpieczeniowego i korporacyjnego z Polski i rynków zagranicznych</p></li><li><p>Przeprojektowałem pipeline sprzedażowy agencji – od metodyki wyceny, przez tworzenie ofert, po pitch kliencki – poprawiając konwersję na zapytaniach </p></li></ul><p></p>",
+          "roles": []
+        },
+        {
+          "id": "exp-przystanr-runm-003",
+          "hidden": false,
+          "company": "Przystań Raduńska – własna działalność",
+          "position": "Założyciel i operator",
+          "location": "Chmielno, Kaszuby",
+          "period": "wrzesień 2020 – październik 2021",
+          "website": {
+            "url": "",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": "<p><strong>Świadomy gap year</strong>. Zbudowałem i prowadziłem kawiarnię od zera – od remontu lokalu i projektu wnętrza, przez szkolenie baristyczne, po codzienne operacje. Rentowny biznes sezonowy.</p>",
+          "roles": []
+        },
+        {
+          "id": "exp-riocreativo-runm-004",
+          "hidden": false,
+          "company": "Rio Creativo – agencja brandingowa",
+          "position": "Senior Manager / Project Manager",
+          "location": "Słupsk",
+          "period": "wrzesień 2017 – wrzesień 2020",
+          "website": {
+            "url": "https://riocreativo.pl/",
+            "label": "riocreativo.pl",
+            "inlineLink": false
+          },
+          "description": "<ul><li>Prowadziłem projekty brandingowe end-to-end w małej agencji: warsztaty strategiczne, prezentacje klienckie, oferty, wyceny i realizacja projektów — łącząc role PM-a, sprzedawcy i stratega</li></ul>",
+          "roles": []
+        },
+        {
+          "id": "exp-arkagdynia-runm-005",
+          "hidden": false,
+          "company": "Asseco Arka Gdynia – koszykówka zawodowa (Ekstraklasa)",
+          "position": "Konsultant zarządu ds. marketingu",
+          "location": "Gdynia",
+          "period": "październik 2019 – kwiecień 2020",
+          "website": {
+            "url": "",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": "<p><em>Konsultant, równolegle z Rio Creativo.</em></p><ul><li>Opracowałem strategię marketingową we współpracy z wiceprezesem Asseco Przemysławem Sęczkowskim: audyt marki, plan marketingowy, restrukturyzacja oferty sponsorskiej, nowy operator biletowy. Efekt: wzrost frekwencji i nowe partnerstwa sponsorskie (przerwane przez COVID-19).</li></ul>",
+          "roles": []
+        },
+        {
+          "id": "exp-energaczarni-runm-006",
+          "hidden": false,
+          "company": "Energa Czarni Słupsk – koszykówka zawodowa (Ekstraklasa)",
+          "position": "Marketing & Media Manager",
+          "location": "Słupsk",
+          "period": "marzec 2012 – wrzesień 2017",
+          "website": {
+            "url": "",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": "<p><em>Pełen zakres operacji marketingowych, medialnych, sponsorskich i społecznościowych czołowego polskiego klubu koszykarskiego przez 5,5 roku.</em></p><ul><li><p>Zorganizowałem Rekord Guinnessa (najgłośniejsza hala w Polsce, 2400 uczestników) generując zasięg medialny krajowy i międzynarodowy (m.in. Hiszpania, Turcja) – czyniąc klub najbardziej medialną marką w polskiej koszykówce</p></li><li><p>Poprowadziłem rekordową kampanię crowdfundingową: ponad 300 000 PLN zebrane w 3 tygodnie na platformie fans4club</p></li><li><p>Zarządzałem sponsoringiem tytularnym z Energa S.A. (kilka mln PLN rocznie) i bezpośrednio pozyskiwałem nowych sponsorów</p></li><li><p>Zbudowałem najbardziej zaangażowaną bazę kibiców w lidze: top 3 frekwencja wyjazdowa mimo mniejszej liczby tytułów. Rebranding Roku (nagroda branżowa) i Najlepsze Wideo Promocyjne (nagroda od Onet.pl)</p></li><li><p>Prowadziłem wszystkie kanały cyfrowe (social media, www), relacje z mediami, inicjatywy CSR, optymalizację ticketingu i kampanie promocyjne</p></li></ul><p></p>",
+          "roles": []
+        }
+      ]
+    },
+    "education": {
+      "title": "Wykształcenie",
+      "columns": 1,
+      "hidden": false,
+      "items": [
+        {
+          "id": "edu-wsaib-runm-001",
+          "hidden": false,
+          "school": "Wyższa Szkoła Administracji i Biznesu im. E. Kwiatkowskiego",
+          "degree": "Studia podyplomowe",
+          "area": "Marketing i PR w Internecie",
+          "grade": "",
+          "location": "Gdynia",
+          "period": "2012 – 2013",
+          "website": {
+            "url": "",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": ""
+        },
+        {
+          "id": "edu-pg-runm-002",
+          "hidden": false,
+          "school": "Politechnika Gdańska",
+          "degree": "Magister",
+          "area": "Marketing i PR w Internecie",
+          "grade": "",
+          "location": "Gdańsk",
+          "period": "2010 – 2012",
+          "website": {
+            "url": "",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": ""
+        },
+        {
+          "id": "edu-us-runm-003",
+          "hidden": false,
+          "school": "Uniwersytet Szczeciński",
+          "degree": "Licencjat",
+          "area": "Marketing i e-commerce",
+          "grade": "",
+          "location": "Szczecin",
+          "period": "2007 – 2010",
+          "website": {
+            "url": "",
+            "label": "",
+            "inlineLink": false
+          },
+          "description": ""
+        }
+      ]
+    },
+    "projects": {
+      "title": "Projekty",
+      "columns": 1,
+      "hidden": true,
+      "items": []
+    },
+    "skills": {
+      "title": "Kompetencje i narzędzia",
+      "columns": 1,
+      "hidden": false,
+      "items": [
+        {
+          "id": "skl-tools-runm-004",
+          "hidden": false,
+          "icon": "",
+          "iconColor": "",
+          "name": "Narzędzia",
+          "proficiency": "",
+          "level": 0,
+          "keywords": [
+            "AI-native",
+            "Asana",
+            "ClickUp",
+            "Google Workspace",
+            "Figma",
+            "Slack",
+            "Tally.so",
+            "Canva",
+            "Claude Code",
+            "Codex",
+            "ChatGPT"
+          ]
+        },
+        {
+          "id": "skl-pm-runm-001",
+          "hidden": false,
+          "icon": "",
+          "iconColor": "",
+          "name": "Zarządzanie projektami",
+          "proficiency": "",
+          "level": 0,
+          "keywords": [
+            "Planowanie i harmonogramy",
+            "Koordynacja zespołów i interesariuszy",
+            "Zarządzanie ryzykiem i priorytetami",
+            "Raportowanie postępów",
+            "Zamówienia publiczne"
+          ]
+        },
+        {
+          "id": "skl-event-runm-002",
+          "hidden": false,
+          "icon": "",
+          "iconColor": "",
+          "name": "Marketing i eventy",
+          "proficiency": "",
+          "level": 0,
+          "keywords": [
+            "Imprezy masowe",
+            "Sponsoring i ticketing",
+            "Kampanie i media",
+            "Sprzedaż B2B"
+          ]
+        },
+        {
+          "id": "skl-mgmt-runm-003",
+          "hidden": false,
+          "icon": "",
+          "iconColor": "",
+          "name": "Zarządzanie",
+          "proficiency": "",
+          "level": 0,
+          "keywords": [
+            "Zespoły do 25 osób",
+            "Procesy",
+            "Relacje z klientami",
+            "Relacje z kibicami",
+            "Relacje ze sponsorami"
+          ]
+        }
+      ]
+    },
+    "languages": {
+      "title": "Języki",
+      "columns": 1,
+      "hidden": false,
+      "items": [
+        {
+          "id": "lng-pl-runm-001",
+          "hidden": false,
+          "language": "Polski",
+          "fluency": "Ojczysty",
+          "level": 0
+        },
+        {
+          "id": "lng-en-runm-002",
+          "hidden": false,
+          "language": "Angielski",
+          "fluency": "B2",
+          "level": 0
+        }
+      ]
+    },
+    "interests": {
+      "title": "Zainteresowania",
+      "columns": 1,
+      "hidden": true,
+      "items": []
+    },
+    "awards": {
+      "title": "Nagrody",
+      "columns": 1,
+      "hidden": true,
+      "items": []
+    },
+    "certifications": {
+      "title": "Certyfikaty",
+      "columns": 1,
+      "hidden": true,
+      "items": []
+    },
+    "publications": {
+      "title": "Publikacje",
+      "columns": 1,
+      "hidden": true,
+      "items": []
+    },
+    "volunteer": {
+      "title": "Wolontariat",
+      "columns": 1,
+      "hidden": true,
+      "items": []
+    },
+    "references": {
+      "title": "Referencje",
+      "columns": 1,
+      "hidden": true,
+      "items": []
+    }
+  },
+  "customSections": [],
+  "metadata": {
+    "template": "glalie",
+    "layout": {
+      "sidebarWidth": 35,
+      "pages": [
+        {
+          "fullWidth": false,
+          "main": [
+            "summary",
+            "experience"
+          ],
+          "sidebar": [
+            "skills",
+            "languages",
+            "education"
+          ]
+        }
+      ]
+    },
+    "page": {
+      "gapX": 18,
+      "gapY": 14,
+      "marginX": 22,
+      "marginY": 24,
+      "format": "a4",
+      "locale": "pl-PL",
+      "hideIcons": false
+    },
+    "design": {
+      "level": {
+        "icon": "",
+        "type": "rectangle"
+      },
+      "colors": {
+        "primary": "rgba(30, 41, 59, 1)",
+        "text": "rgba(15, 23, 42, 1)",
+        "background": "rgba(255, 255, 255, 1)"
+      }
+    },
+    "typography": {
+      "body": {
+        "fontFamily": "DM Sans",
+        "fontWeights": [
+          "400"
+        ],
+        "fontSize": 10,
+        "lineHeight": 1.5
+      },
+      "heading": {
+        "fontFamily": "DM Sans",
+        "fontWeights": [
+          "700"
+        ],
+        "fontSize": 11,
+        "lineHeight": 1.35
+      }
+    },
+    "notes": ""
+  }
+}

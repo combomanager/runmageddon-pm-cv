@@ -8,7 +8,7 @@ Polska | matekaz@outlook.com | +48 732 186 476 | [linkedin.com/in/combomanager](
 
 ## PODSUMOWANIE ZAWODOWE
 
-Manager i lider operacji z 14-letnim doświadczeniem w koordynacji projektów od planowania po realizację — w sporcie, marketingu, agencjach i startupie. 6 lat w ekstraklasie koszykówki (Energa Czarni Słupsk 5,5 roku + Asseco Arka): imprezy masowe (Rekord Guinnessa 129,6 dB), sponsoring, ticketing i kampanie. W agencji UX zarządzałem do 25 osób i 3-4 projektami enterprise równolegle; wygrałem przetarg na 14 mln PLN dla Ministerstwa Finansów. Łączę planowanie z egzekucją pod presją terminów i wielu interesariuszy. Najlepiej działam w dynamicznym środowisku, gdzie liczy się porządek w procesach i przepływ informacji między zespołami.
+Manager i lider operacji z 14-letnim doświadczeniem w koordynacji projektów od planowania po realizację — w sporcie, marketingu, agencjach i startupie. 6 lat w ekstraklasie koszykówki (Energa Czarni Słupsk 5,5 roku + Asseco Arka): imprezy masowe (Rekord Guinnessa 129,6 dB), sponsoring, ticketing i kampanie. W agencji UX zarządzałem do 25 osób i 3–4 projektami enterprise równolegle; wygrałem przetarg na 14 mln PLN dla Ministerstwa Finansów. W AION: wzrost skali operacji **8×** w 12 miesięcy. Łączę planowanie z egzekucją pod presją terminów i wielu interesariuszy. Najlepiej działam w dynamicznym środowisku, gdzie liczy się porządek w procesach i przepływ informacji między zespołami.
 
 ---
 
@@ -19,7 +19,7 @@ Manager i lider operacji z 14-letnim doświadczeniem w koordynacji projektów od
 
 Koordynowałem delivery produktu i współpracę zespołu 6 osób (deweloperzy, UX, specjaliści) w okresie intensywnych premier — wzrost skali operacji **8×** w 12 miesięcy.
 
-- Koordynowałem pracę zespołów produktu, sprzedaży i wsparcia przy jednoczesnym prowadzeniu trzech strumieni działań (B2C, B2B, kursy online) — harmonogramy, priorytety i raportowanie postępów pod presją terminów
+- Koordynowałem pracę zespołów produktu, sprzedaży i wsparcia przy trzech strumieniach działań (B2C, B2B, kursy online) — harmonogramy, priorytety i raportowanie postępów pod presją terminów
 - Prowadziłem komunikację z klientami B2B (10+ calli), pętle feedbacku (ankiety, Tally.so) i wsparcie społeczności 3000 osób na Discord podczas premier
 - Koordynowałem compliance prawny (polityka prywatności, regulamin) oraz negocjacje partnerstwa z Biznes Ligą Runamageddon (umowa barterowa w przygotowaniu)
 
@@ -41,7 +41,7 @@ Prowadziłem operacje jednej z rozpoznawalnych polskich agencji UX. Klienci ente
 ### PRZYSTAŃ RADUŃSKA — Własna działalność
 **Założyciel i operator** | wrzesień 2020 – październik 2021
 
-Zbudowałem i prowadziłem kawiarnię od zera w Chmielnie na Kaszubach — od remontu lokalu i projektu wnętrza, przez szkolenie baristyczne, po codzienne operacje. Rentowny biznes sezonowy.
+Zbudowałem i prowadziłem kawiarnię od zera w Chmielnie na Kaszubach — od remontu lokalu i projektu wnętrza, przez szkolenie baristyczne, po codzienne operacje. Rentowny biznes sezonowy. Świadomy zawodowy gap year — czas na szukanie własnego „why”.
 
 ---
 
@@ -55,7 +55,7 @@ Zbudowałem i prowadziłem kawiarnię od zera w Chmielnie na Kaszubach — od re
 ### ASSECO ARKA GDYNIA — Koszykówka zawodowa (Ekstraklasa)
 **Konsultant zarządu ds. marketingu** | październik 2019 – kwiecień 2020 *(równolegle z Rio Creativo)*
 
-- Opracowałem strategię marketingową we współpracy z wiceprezesem Asseco Przemysławem Sęczkowskim: audyt marki, plan marketingowy, restrukturyzacja oferty sponsorskiej, nowy operator biletowy. Efekt: wzrost frekwencji i nowe partnerstwa sponsorskie (przerwane przez COVID-19).
+- Opracowałem strategię marketingową we współpracy z wiceprezesem Asseco Przemysławem Sęczkowskim: audyt marki, plan marketingowy, restrukturyzacja oferty sponsorskiej, wdrożenie nowego operatora biletowego. Efekt: wzrost frekwencji i nowe partnerstwa sponsorskie (przerwane przez COVID-19).
 
 ---
 
@@ -64,7 +64,7 @@ Zbudowałem i prowadziłem kawiarnię od zera w Chmielnie na Kaszubach — od re
 
 Prowadziłem pełen zakres operacji marketingowych, medialnych, sponsorskich i społecznościowych czołowego polskiego klubu koszykarskiego przez 5,5 roku.
 
-- Zorganizowałem Rekord Guinnessa (najgłośniejsza hala w Polsce, 2400 uczestników) generując zasięg medialny krajowy i międzynarodowy (m.in. Hiszpania, Turcja) — czyniąc klub najbardziej medialną marką w polskiej koszykówce
+- Zorganizowałem rekord Guinnessa hałasu w zamkniętej hali — kibice osiągnęli **129,6 dB** (marzec 2014). Najgłośniejsza hala w Polsce; zasięg medialny krajowy i międzynarodowy (m.in. Hiszpania, Turcja)
 - Poprowadziłem rekordową kampanię crowdfundingową: ponad 300 000 PLN zebrane w 3 tygodnie na platformie fans4club
 - Zarządzałem sponsoringiem tytularnym z Energa S.A. (kilka mln PLN rocznie) i bezpośrednio pozyskiwałem nowych sponsorów
 - Zbudowałem najbardziej zaangażowaną bazę kibiców w lidze: top 3 frekwencja wyjazdowa mimo mniejszej liczby tytułów. Rebranding Roku (nagroda branżowa) i Najlepsze Wideo Promocyjne (Onet.pl)

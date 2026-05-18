@@ -15,7 +15,7 @@
   },
   "basics": {
     "name": "Mateusz Kaźmierczak",
-    "headline": "Manager | Eventy · Sport · Marketing · Operacje · Produkty · UX",
+    "headline": "Manager | Eventy · Sport · Marketing · Operacje",
     "email": "matekaz@outlook.com",
     "phone": "+48 732 186 476",
     "location": "Polska",
@@ -29,7 +29,7 @@
     "title": "Podsumowanie zawodowe",
     "columns": 1,
     "hidden": false,
-    "content": "<p>Manager i lider operacji z 14-letnim doświadczeniem w koordynacji projektów od planowania po realizację – w sporcie, marketingu, agencjach i startupie. 6 lat w ekstraklasie koszykówki (Energa Czarni Słupsk 5,5 roku + Asseco Arka): imprezy masowe (Rekord Guinnessa 129,6 dB), sponsoring, ticketing i kampanie. W agencji UX zarządzałem zespołem do 25 osób i 3-4 projektami enterprise równolegle; wygrałem przetarg na 14 mln PLN dla Ministerstwa Finansów.</p><p>Łączę planowanie z egzekucją pod presją terminów i wielu interesariuszy. Najlepiej działam w dynamicznym środowisku, gdzie liczy się porządek w procesach i przepływ informacji między zespołami.</p>"
+    "content": "<p>Manager i lider operacji z 14-letnim doświadczeniem w koordynacji projektów od planowania po realizację – w sporcie, marketingu, agencjach i startupie. 6 lat w ekstraklasie koszykówki (Energa Czarni Słupsk 5,5 roku + Asseco Arka): imprezy masowe (Rekord Guinnessa 129,6 dB), sponsoring, ticketing i kampanie. W agencji UX zarządzałem zespołem do 25 osób i 3–4 projektami enterprise równolegle; wygrałem przetarg na 14 mln PLN dla Ministerstwa Finansów. W AION: wzrost skali operacji 8× w 12 miesięcy.</p><p>Łączę planowanie z egzekucją pod presją terminów i wielu interesariuszy. Najlepiej działam w dynamicznym środowisku, gdzie liczy się porządek w procesach i przepływ informacji między zespołami.</p>"
   },
   "sections": {
     "profiles": {
@@ -60,7 +60,7 @@
         {
           "id": "exp-aionmind-runm-001",
           "hidden": false,
-          "company": "AION – startup",
+          "company": "AION MIND — startup",
           "position": "Product Owner / Chief of Staff",
           "location": "Polska",
           "period": "marzec 2025 – marzec 2026",
@@ -69,14 +69,14 @@
             "label": "aionmind.com",
             "inlineLink": false
           },
-          "description": "<p><em>Aplikacja B2C, SaaS B2B, kursy online. Zespół 6-7 osób. Wzrost skali operacji 8× w 12 miesięcy — intensywne premiery pod presją terminów.</em></p><ul><li><p>Koordynowałem pracę zespołów produktu i wsparcia przy jednoczesnym prowadzeniu trzech strumieni działań (B2C, B2B, kursy online) — harmonogramy, priorytety i raportowanie postępów pod presją terminów</p></li><li><p>Współpraca z partnerami i podwykonawcami </p></li><li><p>Prowadziłem komunikację z klientami B2B, pętle feedbacku (ankiety) i wsparcie społeczności 3000 osób na Discord</p></li><li><p>Koordynowałem compliance prawny (polityka prywatności, regulamin) oraz negocjacje partnerstwa z Biznes Ligą Runamageddon</p></li></ul><p></p>",
+          "description": "<p><em>Aplikacja B2C, SaaS B2B, kursy online. Zespół 6 osób. Wzrost skali operacji 8× w 12 miesięcy — intensywne premiery pod presją terminów.</em></p><ul><li><p>Koordynowałem pracę zespołów produktu, sprzedaży i wsparcia przy trzech strumieniach działań (B2C, B2B, kursy online) — harmonogramy, priorytety i raportowanie postępów pod presją terminów</p></li><li><p>Prowadziłem komunikację z klientami B2B (10+ calli), pętle feedbacku (ankiety, Tally.so) i wsparcie społeczności 3000 osób na Discord podczas premier</p></li><li><p>Koordynowałem compliance prawny (polityka prywatności, regulamin) oraz negocjacje partnerstwa z Biznes Ligą Runamageddon (umowa barterowa w przygotowaniu)</p></li></ul><p></p>",
           "roles": []
         },
         {
           "id": "exp-mobeedick-runm-002",
           "hidden": false,
           "company": "Mobee Dick – agencja UX",
-          "position": "PM -> General Manager",
+          "position": "General Manager",
           "location": "Polska",
           "period": "grudzień 2021 – kwiecień 2025",
           "website": {
@@ -84,7 +84,7 @@
             "label": "mobeedick.com",
             "inlineLink": false
           },
-          "description": "<p><em>Jedna z rozpoznawalnych polskich agencji UX. Klienci enterprise: banki, ubezpieczyciele, korporacje, e-commerce. Przychód roczny ~5 mln PLN. Zespół do 25 osób. Koordynowałem projekty i harmonogramy, prowadziłem newbiz, budowałem relacje z klientami i w zespole</em></p><ul><li><p>Wygrałem przetarg publiczny na 14 mln PLN brutto dla Ministerstwa Finansów (umowa ramowa 2025–2028) – poprowadziłem cały proces od zera: dokumentacja przetargowa, case study, strategia cenowa, złożenie oferty. Najwyższy wynik, najwyższa cena. Pokonanie 2 finalistów.</p></li><li><p>Zbudowałem relację z klientem rządowym, która przełożyła się na wzrost wartości kontraktu z 1 mln do 14 mln PLN (14× wzrost) dzięki konsekwentnemu dowożeniu i bezpośredniemu budowaniu relacji, w tym wizytom w Ministerstwie</p></li><li><p>Poprowadziłem redesign UX portalu podatki.gov.pl i procesu „Twój ePIT” (projekt za 1 mln PLN,). Przekształcenie procesu, w którym użytkownicy nie mogli samodzielnie złożyć deklaracji, w self-service – system używany przez miliony polskich podatników</p></li><li><p>Zarządzałem 3–4 projektami UX enterprise równolegle dla klientów z sektorów bankowego, ubezpieczeniowego i korporacyjnego z Polski i rynków zagranicznych</p></li><li><p>Przeprojektowałem pipeline sprzedażowy agencji – od metodyki wyceny, przez tworzenie ofert, po pitch kliencki – poprawiając konwersję na zapytaniach </p></li></ul><p></p>",
+          "description": "<p><em>Jedna z rozpoznawalnych polskich agencji UX. Klienci enterprise: banki, ubezpieczyciele, korporacje, e-commerce. Przychód roczny ~5 mln PLN. Zespół do 25 osób. Koordynowałem projekty i harmonogramy, prowadziłem newbiz, budowałem relacje z klientami i w zespole</em></p><ul><li><p>Wygrałem przetarg publiczny na 14 mln PLN brutto dla Ministerstwa Finansów (umowa ramowa 2025–2028) – poprowadziłem cały proces od zera: dokumentacja przetargowa, case study, strategia cenowa, złożenie oferty. Najwyższy wynik, najwyższa cena. Pokonanie 2 finalistów.</p></li><li><p>Zbudowałem relację z klientem rządowym, która przełożyła się na wzrost wartości kontraktu z 1 mln do 14 mln PLN (14× wzrost) dzięki konsekwentnemu dowożeniu i bezpośredniemu budowaniu relacji, w tym wizytom w Ministerstwie</p></li><li><p>Poprowadziłem redesign UX portalu podatki.gov.pl i procesu „Twój ePIT” (projekt za 1 mln PLN, wybrany spośród ~20 firm). Przekształcenie procesu, w którym użytkownicy nie mogli samodzielnie złożyć deklaracji, w self-service – system używany przez miliony polskich podatników</p></li><li><p>Zarządzałem 3–4 projektami UX enterprise równolegle dla klientów z sektorów bankowego, ubezpieczeniowego i korporacyjnego z Polski i rynków zagranicznych</p></li><li><p>Przeprojektowałem pipeline sprzedażowy agencji – od metodyki wyceny, przez tworzenie ofert, po pitch kliencki – poprawiając konwersję na zapytaniach </p></li></ul><p></p>",
           "roles": []
         },
         {
@@ -129,7 +129,7 @@
             "label": "",
             "inlineLink": false
           },
-          "description": "<p><em>Konsultant, równolegle z Rio Creativo.</em></p><ul><li>Opracowałem strategię marketingową we współpracy z wiceprezesem Asseco Przemysławem Sęczkowskim: audyt marki, plan marketingowy, restrukturyzacja oferty sponsorskiej, nowy operator biletowy. Efekt: wzrost frekwencji i nowe partnerstwa sponsorskie (przerwane przez COVID-19).</li></ul>",
+          "description": "<p><em>Konsultant, równolegle z Rio Creativo.</em></p><ul><li>Opracowałem strategię marketingową we współpracy z wiceprezesem Asseco Przemysławem Sęczkowskim: audyt marki, plan marketingowy, restrukturyzacja oferty sponsorskiej, wdrożenie nowego operatora biletowego. Efekt: wzrost frekwencji i nowe partnerstwa sponsorskie (przerwane przez COVID-19).</li></ul>",
           "roles": []
         },
         {
@@ -144,7 +144,7 @@
             "label": "",
             "inlineLink": false
           },
-          "description": "<p><em>Pełen zakres operacji marketingowych, medialnych, sponsorskich i społecznościowych czołowego polskiego klubu koszykarskiego przez 5,5 roku.</em></p><ul><li><p>Zorganizowałem Rekord Guinnessa (najgłośniejsza hala w Polsce, 2400 uczestników) generując zasięg medialny krajowy i międzynarodowy (m.in. Hiszpania, Turcja) – czyniąc klub najbardziej medialną marką w polskiej koszykówce</p></li><li><p>Poprowadziłem rekordową kampanię crowdfundingową: ponad 300 000 PLN zebrane w 3 tygodnie na platformie fans4club</p></li><li><p>Zarządzałem sponsoringiem tytularnym z Energa S.A. (kilka mln PLN rocznie) i bezpośrednio pozyskiwałem nowych sponsorów</p></li><li><p>Zbudowałem najbardziej zaangażowaną bazę kibiców w lidze: top 3 frekwencja wyjazdowa mimo mniejszej liczby tytułów. Rebranding Roku (nagroda branżowa) i Najlepsze Wideo Promocyjne (nagroda od Onet.pl)</p></li><li><p>Prowadziłem wszystkie kanały cyfrowe (social media, www), relacje z mediami, inicjatywy CSR, optymalizację ticketingu i kampanie promocyjne</p></li></ul><p></p>",
+          "description": "<p><em>Pełen zakres operacji marketingowych, medialnych, sponsorskich i społecznościowych czołowego polskiego klubu koszykarskiego przez 5,5 roku.</em></p><ul><li><p>Zorganizowałem rekord Guinnessa hałasu w zamkniętej hali — kibice osiągnęli 129,6 dB (marzec 2014). Najgłośniejsza hala w Polsce; zasięg medialny krajowy i międzynarodowy (m.in. Hiszpania, Turcja)</p></li><li><p>Poprowadziłem rekordową kampanię crowdfundingową: ponad 300 000 PLN zebrane w 3 tygodnie na platformie fans4club</p></li><li><p>Zarządzałem sponsoringiem tytularnym z Energa S.A. (kilka mln PLN rocznie) i bezpośrednio pozyskiwałem nowych sponsorów</p></li><li><p>Zbudowałem najbardziej zaangażowaną bazę kibiców w lidze: top 3 frekwencja wyjazdowa mimo mniejszej liczby tytułów. Rebranding Roku (nagroda branżowa) i Najlepsze Wideo Promocyjne (nagroda od Onet.pl)</p></li><li><p>Prowadziłem wszystkie kanały cyfrowe (social media, www), relacje z mediami, inicjatywy CSR, optymalizację ticketingu i kampanie promocyjne</p></li></ul><p></p>",
           "roles": []
         }
       ]
@@ -302,7 +302,7 @@
           "id": "lng-en-runm-002",
           "hidden": false,
           "language": "Angielski",
-          "fluency": "B2",
+          "fluency": "Biegły zawodowo",
           "level": 0
         }
       ]

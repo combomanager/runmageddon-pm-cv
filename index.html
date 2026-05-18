@@ -1,0 +1,980 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mateusz Kaźmierczak — PM · Eventy · Sport · Runmageddon</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          brand: {
+            dark: '#0F0F10',
+            800: '#141414',
+            700: '#161616',
+            600: '#1c1c28',
+            500: '#262635',
+            400: '#3a3a4d',
+          },
+          accent: {
+            yellow: '#FFDD00',
+          },
+        },
+        fontFamily: {
+          display: ['"Space Grotesk"', 'system-ui', 'sans-serif'],
+          sans: ['"DM Sans"', 'system-ui', 'sans-serif'],
+          mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
+        },
+      }
+    }
+  };
+</script>
+
+<style>
+  :root {
+    --neon-cyan: #FFDD00;
+    --neon-lime: #FFDD00;
+    --neon-violet: #FFDD00;
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    background: #0F0F10;
+    color: #e7e7ee;
+    font-family: 'DM Sans', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Subtle grid + radial glow background */
+  .bg-grid {
+    background-image:
+      linear-gradient(to right, rgba(255,255,255,0.035) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255,255,255,0.035) 1px, transparent 1px);
+    background-size: 56px 56px;
+  }
+  .bg-grid-fade {
+    -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 40%, transparent 100%);
+            mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 40%, transparent 100%);
+  }
+  .hero-glow::before {
+    content: '';
+    position: absolute; inset: -20% -10% auto -10%; height: 90%;
+    background:
+      radial-gradient(60% 60% at 20% 30%, rgba(255,221,0,0.18), transparent 60%),
+      radial-gradient(50% 60% at 85% 20%, rgba(255,221,0,0.10), transparent 60%);
+    filter: blur(20px);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* Typography */
+  .display { font-family: 'Space Grotesk', system-ui, sans-serif; letter-spacing: -0.02em; }
+  .mono { font-family: 'JetBrains Mono', ui-monospace, monospace; }
+  .eyebrow {
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--neon-cyan);
+  }
+
+  /* Neon text */
+  .text-cyan-glow {
+    color: var(--neon-cyan);
+    text-shadow: 0 0 20px rgba(255,221,0,0.45), 0 0 1px rgba(255,221,0,0.8);
+  }
+  .text-lime-glow {
+    color: var(--neon-lime);
+    text-shadow: 0 0 20px rgba(255,221,0,0.35);
+  }
+
+  /* Card */
+  .card {
+    background: linear-gradient(180deg, rgba(255,255,255,0.025), rgba(255,255,255,0.005));
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 14px;
+  }
+  .card-hover { transition: border-color .25s ease, transform .25s ease, box-shadow .25s ease; }
+  .card-hover:hover {
+    border-color: rgba(255,221,0,0.45);
+    box-shadow: 0 0 0 1px rgba(255,221,0,0.15), 0 20px 60px -20px rgba(255,221,0,0.25);
+  }
+
+  /* Tag */
+  .tag {
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 5px 10px; border-radius: 999px;
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: 11px; letter-spacing: 0.04em;
+    color: #d8d8e3;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.08);
+    transition: all .2s ease;
+  }
+  .tag:hover { border-color: rgba(255,221,0,0.4); color: #fff; }
+  .tag-cyan { color: var(--neon-cyan); border-color: rgba(255,221,0,0.35); background: rgba(255,221,0,0.06); }
+  .tag-lime { color: var(--neon-lime); border-color: rgba(255,221,0,0.35); background: rgba(255,221,0,0.05); }
+
+  /* Timeline */
+  .tl-line {
+    position: absolute; left: 19px; top: 0; bottom: 0; width: 2px;
+    background: linear-gradient(to bottom,
+      transparent 0%,
+      rgba(255,221,0,0.5) 4%,
+      rgba(255,221,0,0.25) 50%,
+      rgba(255,221,0,0.25) 92%,
+      transparent 100%);
+  }
+  @media (min-width: 768px) {
+    .tl-line { left: 23px; }
+  }
+  .tl-node {
+    position: absolute; left: 12px; top: 18px;
+    width: 16px; height: 16px; border-radius: 50%;
+    background: #0F0F10;
+    border: 2px solid var(--neon-cyan);
+    box-shadow: 0 0 0 4px rgba(255,221,0,0.08), 0 0 16px rgba(255,221,0,0.6);
+  }
+  @media (min-width: 768px) {
+    .tl-node { left: 16px; }
+  }
+  .tl-node.lime {
+    border-color: var(--neon-lime);
+    box-shadow: 0 0 0 4px rgba(255,221,0,0.08), 0 0 16px rgba(255,221,0,0.5);
+  }
+  .tl-node.violet {
+    border-color: var(--neon-violet);
+    box-shadow: 0 0 0 4px rgba(255,221,0,0.08), 0 0 16px rgba(255,221,0,0.5);
+  }
+  .tl-node.muted {
+    border-color: #3a3a4d;
+    box-shadow: 0 0 0 4px rgba(255,255,255,0.02);
+  }
+
+  /* Sticky nav blur */
+  .nav-blur {
+    backdrop-filter: blur(14px) saturate(140%);
+    -webkit-backdrop-filter: blur(14px) saturate(140%);
+    background: rgba(5,5,8,0.7);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+
+  /* Marquee-ish but static client badges */
+  .client-badge {
+    display: inline-flex; align-items: center; justify-content: center;
+    height: 56px; padding: 0 22px;
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 12px;
+    background: rgba(255,255,255,0.02);
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+    font-weight: 600; letter-spacing: 0.02em;
+    color: #c8c8d4; font-size: 16px;
+    transition: all .2s ease;
+  }
+  .client-badge:hover { color: #fff; border-color: rgba(255,221,0,0.45); }
+
+  /* Glow underline links */
+  .link {
+    color: var(--neon-cyan);
+    border-bottom: 1px solid rgba(255,221,0,0.4);
+    transition: border-color .2s, text-shadow .2s;
+  }
+  .link:hover { border-color: var(--neon-cyan); text-shadow: 0 0 12px rgba(255,221,0,0.6); }
+
+  /* Section divider label */
+  .section-label {
+    display: inline-flex; align-items: center; gap: 10px;
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    font-size: 12px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: #a1a1aa;
+  }
+  .section-label::before {
+    content: ''; width: 30px; height: 1px;
+    background: linear-gradient(to right, transparent, var(--neon-cyan));
+  }
+
+  /* Stat number */
+  .stat-num {
+    font-family: 'Space Grotesk', system-ui, sans-serif;
+    font-weight: 700; letter-spacing: -0.04em;
+    font-size: clamp(40px, 6vw, 72px);
+    line-height: 1;
+  }
+
+  /* Subtle scanline on hero */
+  .scanlines {
+    background-image: repeating-linear-gradient(0deg, rgba(255,255,255,0.015) 0 1px, transparent 1px 4px);
+    pointer-events: none;
+  }
+
+  /* Progress dots for languages */
+  .lang-dot { width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.12); }
+  .lang-dot.on { background: var(--neon-cyan); box-shadow: 0 0 12px rgba(255,221,0,0.6); }
+
+  /* Anchor offset for sticky nav */
+  section[id] { scroll-margin-top: 80px; }
+
+  /* Selection */
+  ::selection { background: rgba(255,221,0,0.35); color: #fff; }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar { width: 10px; height: 10px; }
+  ::-webkit-scrollbar-track { background: #0F0F10; }
+  ::-webkit-scrollbar-thumb { background: #1c1c28; border-radius: 6px; }
+  ::-webkit-scrollbar-thumb:hover { background: #262635; }
+
+  /* Pulse animations */
+  @keyframes pulseCyan {
+    0%,100% { box-shadow: 0 0 0 4px rgba(255,221,0,0.08), 0 0 16px rgba(255,221,0,0.6); }
+    50%     { box-shadow: 0 0 0 6px rgba(255,221,0,0.14), 0 0 24px rgba(255,221,0,0.9); }
+  }
+  @keyframes pulseLime {
+    0%,100% { box-shadow: 0 0 0 3px rgba(255,221,0,0.18), 0 0 12px rgba(255,221,0,0.8); }
+    50%     { box-shadow: 0 0 0 5px rgba(255,221,0,0.28), 0 0 18px rgba(255,221,0,1); }
+  }
+  .pulse { animation: pulseCyan 2.6s ease-in-out infinite; }
+
+  /* Available status dot */
+  .status-dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: var(--neon-lime);
+    box-shadow: 0 0 0 3px rgba(255,221,0,0.18), 0 0 12px rgba(255,221,0,0.8);
+    animation: pulseLime 2s ease-in-out infinite;
+  }
+</style>
+</head>
+<body class="overflow-x-hidden">
+
+<!-- ============================ NAV ============================ -->
+<nav class="fixed top-0 left-0 right-0 z-50 nav-blur">
+  <div class="max-w-7xl mx-auto px-6 md:px-10 h-16 flex items-center justify-between">
+    <div class="hidden md:flex items-center gap-7 mono text-[12px] uppercase tracking-[0.16em] text-zinc-400">
+      <a href="#runmaggedon" class="hover:text-white transition text-neon-lime">00 / Dla Runmageddon</a>
+      <a href="#about" class="hover:text-white transition">01 / O mnie</a>
+      <a href="#stats" class="hover:text-white transition">02 / Wyniki</a>
+      <a href="#timeline" class="hover:text-white transition">03 / Doświadczenie</a>
+      <a href="#stack" class="hover:text-white transition">04 / Narzędzia</a>
+      <a href="#contact" class="hover:text-white transition">05 / Kontakt</a>
+    </div>
+    <a href="#top" class="md:hidden mono text-[11px] uppercase tracking-[0.18em] text-zinc-400 hover:text-white transition">↑ Góra</a>
+    <a href="#contact" class="inline-flex items-center gap-2 px-4 py-2 rounded-full mono text-[11px] uppercase tracking-[0.14em] bg-neon-cyan text-[#0F0F10] font-semibold hover:shadow-[0_0_24px_rgba(255,221,0,0.6)] transition">
+      <span class="w-1.5 h-1.5 rounded-full bg-[#0F0F10]"></span> Porozmawiajmy
+    </a>
+  </div>
+</nav>
+
+<!-- ============================ HERO ============================ -->
+<section id="top" class="relative pt-32 pb-24 md:pt-40 md:pb-32 overflow-hidden hero-glow">
+  <div class="absolute inset-0 bg-grid bg-grid-fade opacity-60"></div>
+  <div class="absolute inset-0 scanlines opacity-30"></div>
+
+  <div class="relative max-w-7xl mx-auto px-6 md:px-10">
+    <!-- meta row -->
+    <div class="flex flex-wrap items-center gap-3 mb-8">
+      <span class="inline-flex items-center gap-2 mono text-[11px] uppercase tracking-[0.18em] text-zinc-400">
+        <span class="status-dot"></span> Dostępny od zaraz
+      </span>
+    </div>
+
+    <p class="eyebrow mb-5">Project Manager · Eventy · Sport</p>
+
+    <h1 class="display font-bold text-[clamp(48px,9vw,128px)] leading-[0.95] tracking-tighter mb-6">
+      Mateusz<br />
+      <span class="relative inline-block">
+        Kaźmierczak<span class="text-cyan-glow">.</span>
+      </span>
+    </h1>
+
+    <p class="max-w-3xl text-xl md:text-2xl text-zinc-300 leading-snug font-light mb-10">
+      14 lat koordynacji projektów — od imprez masowych w sporcie, przez agencję UX, po startup. Planowanie, harmonogramy, wielu interesariuszy.
+    </p>
+
+    <!-- contact pills -->
+    <div class="flex flex-wrap items-center gap-3">
+      <a href="mailto:matekaz@outlook.com" class="tag tag-cyan">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg>
+        matekaz@outlook.com
+      </a>
+      <a href="tel:+48732186476" class="tag">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+        +48 732 186 476
+      </a>
+      <a href="https://www.linkedin.com/in/combomanager/" target="_blank" rel="noopener" class="tag">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2ZM8 19H5V8h3Zm-1.5-12.3A1.7 1.7 0 1 1 8.2 5 1.7 1.7 0 0 1 6.5 6.7ZM19 19h-3v-5.6c0-3.4-4-3.1-4 0V19h-3V8h3v1.8c1.4-2.6 7-2.8 7 2.5Z"/></svg>
+        linkedin.com/in/combomanager
+      </a>
+    </div>
+
+    <!-- decorative big-stats anchored to bottom of hero -->
+    <div class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-10 border-t border-white/5 pt-10">
+      <div>
+        <div class="stat-num text-cyan-glow">129<span class="text-zinc-400 text-[0.45em] font-medium ml-0.5 align-top">,6</span></div>
+        <p class="mono text-[10px] uppercase tracking-[0.18em] text-zinc-500 mt-3">dB — rekord hałasu</p>
+        <p class="text-zinc-400 text-sm mt-1">Guinness · Czarni Słupsk · marzec 2014</p>
+      </div>
+      <div>
+        <div class="stat-num text-lime-glow">25</div>
+        <p class="mono text-[10px] uppercase tracking-[0.18em] text-zinc-500 mt-3">Osób w zespole</p>
+        <p class="text-zinc-400 text-sm mt-1">PM w agencji — 4–5 projektów równolegle</p>
+      </div>
+      <div>
+        <div class="stat-num text-cyan-glow">5,5</div>
+        <p class="mono text-[10px] uppercase tracking-[0.18em] text-zinc-500 mt-3">Lat w sporcie</p>
+        <p class="text-zinc-400 text-sm mt-1">Ekstraklasa — eventy, sponsoring, ticketing</p>
+      </div>
+      <div>
+        <div class="stat-num text-lime-glow">14</div>
+        <p class="mono text-[10px] uppercase tracking-[0.18em] text-zinc-500 mt-3">Lat PM / operacje</p>
+        <p class="text-zinc-400 text-sm mt-1">Od parkietu przez agencję do startupu</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ DLA RUNMAGEDDON ============================ -->
+<section id="runmaggeddon" class="relative py-24 md:py-32 border-t border-white/5 overflow-hidden">
+  <div class="absolute inset-0 pointer-events-none" style="background: radial-gradient(60% 50% at 80% 0%, rgba(255,221,0,0.08), transparent 60%), radial-gradient(50% 40% at 10% 100%, rgba(255,221,0,0.08), transparent 60%);"></div>
+
+  <div class="relative max-w-7xl mx-auto px-6 md:px-10">
+    <div class="grid md:grid-cols-12 gap-10 mb-14">
+      <div class="md:col-span-5">
+        <span class="section-label">/ 00 — Dla Runmageddon</span>
+        <h2 class="display text-4xl md:text-5xl font-bold mt-5 leading-[1.05] tracking-tight">
+          Dlaczego <span class="text-lime-glow">Runmageddon</span>.
+        </h2>
+      </div>
+      <div class="md:col-span-7 space-y-5 text-lg text-zinc-300 leading-relaxed">
+        <p>
+          Znam Runmageddon z ekosystemu sportowego — w AION negocjowałem partnerstwo z
+          <strong class="text-white">Biznes Ligą Runamageddon</strong> (umowa barterowa w przygotowaniu).
+          Wasze ogłoszenie to dokładnie mój profil: projekty od pomysłu do realizacji,
+          <strong class="text-white">eventy na dużą skalę</strong>, wielu interesariuszy i dynamiczne tempo.
+        </p>
+        <p class="text-zinc-400">
+          5,5 roku w ekstraklasie koszykówki (imprezy masowe, sponsoring, ticketing) +
+          lata koordynacji w agencji i startupie. Planowanie, harmonogramy, Asana — w praktyce.
+        </p>
+      </div>
+    </div>
+
+    <!-- MUST-HAVE -->
+    <div class="mb-10">
+      <div class="flex items-center gap-3 mb-5">
+        <span class="mono text-[11px] uppercase tracking-[0.18em] text-neon-cyan">// wymagania ogłoszenia</span>
+        <span class="h-px flex-1 bg-gradient-to-r from-neon-cyan/40 to-transparent"></span>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-4">
+        <article class="card p-6">
+          <p class="mono text-[11px] uppercase tracking-[0.16em] text-zinc-500 mb-3">Wymóg → Mój dowód</p>
+          <p class="display text-base font-semibold text-white mb-3">PM 2–4 lata · projekt od A do Z</p>
+          <p class="text-sm text-zinc-300 leading-relaxed">
+            Mobee Dick: PM → General Manager, <strong class="text-white">4–5 projektów enterprise równolegle</strong>,
+            harmonogramy w Asanie, zespół do 25 os. AION: koordynacja delivery przy premierach i trzech strumieniach działań.
+          </p>
+        </article>
+
+        <article class="card p-6">
+          <p class="mono text-[11px] uppercase tracking-[0.16em] text-zinc-500 mb-3">Wymóg → Mój dowód</p>
+          <p class="display text-base font-semibold text-white mb-3">Eventy produkcyjne · marketing · duża skala</p>
+          <p class="text-sm text-zinc-300 leading-relaxed">
+            <strong class="text-white">Energa Czarni Słupsk (5,5 roku)</strong>: rekord Guinnessa
+            <strong class="text-white">129,6 dB</strong> hałasu w hali (marzec 2014),
+            kampanie promocyjne, ticketing, sponsoring. Asseco Arka: operator biletowy, frekwencja, partnerstwa.
+          </p>
+        </article>
+
+        <article class="card p-6">
+          <p class="mono text-[11px] uppercase tracking-[0.16em] text-zinc-500 mb-3">Wymóg → Mój dowód</p>
+          <p class="display text-base font-semibold text-white mb-3">Wielu interesariuszy · przepływ informacji</p>
+          <p class="text-sm text-zinc-300 leading-relaxed">
+            Przetarg MF <strong class="text-white">14 mln PLN</strong> — wielopoziomowi decydenci, dokumentacja, raportowanie.
+            W sporcie: media, sponsorzy, liga, kibice. W agencji: klienci enterprise, PM-owie, UX, dev.
+          </p>
+        </article>
+
+        <article class="card p-6">
+          <p class="mono text-[11px] uppercase tracking-[0.16em] text-zinc-500 mb-3">Wymóg → Mój dowód</p>
+          <p class="display text-base font-semibold text-white mb-3">Samodzielność · presja czasu · procesy</p>
+          <p class="text-sm text-zinc-300 leading-relaxed">
+            Własna kawiarnia od zera (operacje sezonowe). Startup 6 os. — harmonogramy premier pod deadline.
+            <strong class="text-white">Budowa i porządkowanie procesów</strong> w Mobee i AION, nie tylko egzekucja cudzych.
+          </p>
+        </article>
+      </div>
+    </div>
+
+    <!-- NICE-TO-HAVE -->
+    <div>
+      <div class="flex items-center gap-3 mb-5">
+        <span class="mono text-[11px] uppercase tracking-[0.18em] text-neon-lime">// atuty dodatkowe</span>
+        <span class="h-px flex-1 bg-gradient-to-r from-neon-lime/40 to-transparent"></span>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-4">
+        <article class="card p-6">
+          <p class="mono text-[11px] uppercase tracking-[0.16em] text-zinc-500 mb-3">Atut → Mój dowód</p>
+          <p class="display text-base font-semibold text-white mb-3">Branża sportowa / fitness / event</p>
+          <p class="text-sm text-zinc-300 leading-relaxed">
+            <strong class="text-white">Ekstraklasa koszykówki</strong> — 5,5 roku marketing &amp; media.
+            Zasięg międzynarodowy (Hiszpania, Turcja). Crowdfunding 300k+ PLN w 3 tygodnie.
+          </p>
+        </article>
+
+        <article class="card p-6">
+          <p class="mono text-[11px] uppercase tracking-[0.16em] text-zinc-500 mb-3">Atut → Mój dowód</p>
+          <p class="display text-base font-semibold text-white mb-3">Asana · ClickUp · narzędzia PM</p>
+          <p class="text-sm text-zinc-300 leading-relaxed">
+            <strong class="text-white">Asana w Mobee Dick</strong> — harmonogramy i koordynacja projektów.
+            ClickUp, Slack, Google Workspace, Figma, Tally.so na co dzień.
+          </p>
+        </article>
+
+        <article class="card p-6">
+          <p class="mono text-[11px] uppercase tracking-[0.16em] text-zinc-500 mb-3">Atut → Mój dowód</p>
+          <p class="display text-base font-semibold text-white mb-3">Angielski B2 · projekty międzynarodowe</p>
+          <p class="text-sm text-zinc-300 leading-relaxed">
+            International B2B calls (AmRest). Projekty dla klientów zagranicznych w agencji UX.
+            Rekord Guinnessa <span class="mono text-zinc-200">129,6 dB</span> z medialnym zasięgiem poza PL.
+          </p>
+        </article>
+
+        <article class="card p-6">
+          <p class="mono text-[11px] uppercase tracking-[0.16em] text-zinc-500 mb-3">Atut → Mój dowód</p>
+          <p class="display text-base font-semibold text-white mb-3">Agencja · duże projekty specjalne</p>
+          <p class="text-sm text-zinc-300 leading-relaxed">
+            Agencja UX (~5 mln PLN przychodu): banki, ubezpieczyciele, sektor publiczny.
+            Rio Creativo: branding end-to-end. Partnerstwo Runmageddon — już w dialogu.
+          </p>
+        </article>
+      </div>
+    </div>
+
+    <!-- BONUS / culture fit -->
+    <div class="mt-10 card p-6 md:p-8 border-l-2" style="border-left-color: var(--neon-lime);">
+      <p class="mono text-[11px] uppercase tracking-[0.18em] text-neon-lime mb-3">// bonus — culture fit</p>
+      <div class="grid md:grid-cols-3 gap-6 text-sm leading-relaxed">
+        <div>
+          <p class="display text-base font-semibold text-white mb-2">Tempo i energia</p>
+          <p class="text-zinc-400">W AION na pewno było tempo, także przez zmiany kierunków. W Mobee mieliśmy super kulturę otwartego feedbacku i w pełni zdalne środowisko pracy. Jestem osobą pozytywną i wnoszę ze sobą „dobrą" energię.</p>
+        </div>
+        <div>
+          <p class="display text-base font-semibold text-white mb-2">Impact, nie stanowiska</p>
+          <p class="text-zinc-400">Od PM-a do General Managera. Od Marketing Managera do konsultanta zarządu. Tytuły zmieniały się za wynikami, ale też nigdy nie przywiązywałem do nich swojej uwagi.</p>
+        </div>
+        <div>
+          <p class="display text-base font-semibold text-white mb-2">Sport i energia</p>
+          <p class="text-zinc-400">Znam presję meczową i eventową. Wnoszę energię zespołu i nastawienie na dowiezienie — nie tylko plan w Excelu, ale ludzie na miejscu i w mediach społecznościowych.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ ABOUT / SUMMARY ============================ -->
+<section id="about" class="relative py-24 md:py-32 border-t border-white/5">
+  <div class="max-w-7xl mx-auto px-6 md:px-10 grid md:grid-cols-12 gap-10">
+    <div class="md:col-span-4">
+      <span class="section-label">/ 01 — Podsumowanie</span>
+      <h2 class="display text-4xl md:text-5xl font-bold mt-5 leading-tight tracking-tight">
+        Koordynuję <br/>
+        <span class="text-cyan-glow">projekty i eventy</span><br/>
+        od planu do realizacji.
+      </h2>
+    </div>
+    <div class="md:col-span-8 space-y-6 text-lg text-zinc-300 leading-relaxed">
+      <p>
+        Project manager i lider operacji z <strong class="text-white">14-letnim doświadczeniem</strong> w koordynacji projektów — sport, marketing, agencja UX, startup. Wygrałem przetarg <strong class="text-white">14 mln PLN</strong> dla MF; zarządzałem zespołem do 25 osób i wieloma projektami równolegle w Asanie.
+      </p>
+      <p>
+        W sporcie: <strong class="text-white">rekord Guinnessa 129,6 dB</strong> (najgłośniejsza hala — marzec 2014),
+        sponsoring tytularny Energa, ticketing i kampanie masowe. W AION: koordynacja zespołu 6 os., partnerstwo z Biznes Ligą Runamageddon, community 3000 os. na Discord.
+      </p>
+      <p class="text-zinc-400">
+        Narzędzia: <span class="text-neon-lime mono text-base">Asana · ClickUp</span>.
+        Angielski <span class="mono text-neon-cyan">B2</span> — projekty i kontakty międzynarodowe.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ KEY WINS / STATS ============================ -->
+<section id="stats" class="relative py-20 md:py-28 border-t border-white/5">
+  <div class="max-w-7xl mx-auto px-6 md:px-10">
+    <span class="section-label">/ 02 — Wybrane wyniki</span>
+    <h2 class="display text-4xl md:text-5xl font-bold mt-5 mb-12 leading-tight tracking-tight">
+      Wyniki pod <span class="text-cyan-glow">PM i eventy</span>.
+    </h2>
+
+    <div class="grid md:grid-cols-3 gap-5">
+      <article class="card card-hover p-7">
+        <div class="flex items-baseline gap-2 mb-1">
+          <span class="display text-5xl font-bold text-cyan-glow">129<span class="text-zinc-400 text-2xl align-top">,6</span></span>
+          <span class="mono text-xs text-zinc-500">dB</span>
+        </div>
+        <p class="display text-lg font-semibold text-white mt-4">Rekord Guinnessa — hałas w hali</p>
+        <p class="text-sm text-zinc-400 leading-relaxed mt-2">
+          Marzec 2014 · kibice <span class="text-white">Czarnych Słupsk</span> w zamkniętej hali sportowej.
+          Ogłuszający wynik <span class="mono text-zinc-200">129,6 dB</span> — zasięg medialny krajowy i międzynarodowy (m.in. Hiszpania, Turcja).
+        </p>
+      </article>
+
+      <article class="card card-hover p-7">
+        <div class="flex items-baseline gap-2 mb-1">
+          <span class="display text-5xl font-bold text-lime-glow">14</span><span class="text-zinc-400 text-2xl align-top"> mln</span>
+          <span class="mono text-xs text-zinc-500">PLN</span>
+        </div>
+        <p class="display text-lg font-semibold text-white mt-4">Przetarg publiczny MF</p>
+        <p class="text-sm text-zinc-400 leading-relaxed mt-2">
+          Wygrany przetarg ramowy — pełna koordynacja procesu, multi-stakeholder, dokumentacja i delivery.
+        </p>
+      </article>
+
+      <article class="card card-hover p-7">
+        <div class="flex items-baseline gap-2 mb-1">
+          <span class="display text-5xl font-bold text-cyan-glow">300k+</span>
+          <span class="mono text-xs text-zinc-500">3 weeks</span>
+        </div>
+        <p class="display text-lg font-semibold text-white mt-4">Crowdfunding rekord</p>
+        <p class="text-sm text-zinc-400 leading-relaxed mt-2">
+          Ponad <span class="mono text-zinc-200">300 000 PLN</span> w 3 tygodnie na fans4club (2017) —
+          rekordowa kampania w polskiej koszykówce.
+        </p>
+      </article>
+
+      <article class="card card-hover p-7">
+        <div class="flex items-baseline gap-2 mb-1">
+          <span class="display text-5xl font-bold text-cyan-glow">25</span>
+          <span class="mono text-xs text-zinc-500">os.</span>
+        </div>
+        <p class="display text-lg font-semibold text-white mt-4">Zespół w agencji UX</p>
+        <p class="text-sm text-zinc-400 leading-relaxed mt-2">
+          General Manager Mobee Dick — zespół do 25 os., 4–5 projektów enterprise równolegle w Asanie.
+        </p>
+      </article>
+
+      <article class="card card-hover p-7">
+        <div class="flex items-baseline gap-2 mb-1">
+          <span class="display text-5xl font-bold text-lime-glow">5,5</span>
+          <span class="mono text-xs text-zinc-500">lat</span>
+        </div>
+        <p class="display text-lg font-semibold text-white mt-4">Ekstraklasa · 5,5 roku</p>
+        <p class="text-sm text-zinc-400 leading-relaxed mt-2">
+          Eventy, sponsoring Energa, ticketing, kampanie promocyjne — pełna odpowiedzialność marketing &amp; media w klubie.
+        </p>
+      </article>
+
+      <article class="card card-hover p-7">
+        <div class="flex items-baseline gap-2 mb-1">
+          <span class="display text-5xl font-bold text-cyan-glow">4–5</span>
+          <span class="mono text-xs text-zinc-500">response</span>
+        </div>
+        <p class="display text-lg font-semibold text-white mt-4">Projekty równolegle</p>
+        <p class="text-sm text-zinc-400 leading-relaxed mt-2">
+          Koordynacja wielu projektów UX enterprise jednocześnie — harmonogramy, ryzyka, raportowanie.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ TIMELINE ============================ -->
+<section id="timeline" class="relative py-24 md:py-32 border-t border-white/5">
+  <div class="max-w-7xl mx-auto px-6 md:px-10">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
+      <div>
+        <span class="section-label">/ 03 — Doświadczenie</span>
+        <h2 class="display text-4xl md:text-5xl font-bold mt-5 leading-tight tracking-tight">
+          Oś czasu — od&nbsp;<span class="text-cyan-glow">parkietu</span> do&nbsp;<span class="text-lime-glow">PM</span>.
+        </h2>
+      </div>
+      <p class="text-zinc-400 max-w-md text-sm leading-relaxed">
+        14 lat, sześć ról, jeden wątek: <span class="text-white">koordynacja projektów i eventów</span> — od sportu przez agencję po startup.
+      </p>
+    </div>
+
+    <div class="relative pl-12 md:pl-16">
+      <div class="tl-line"></div>
+
+      <!-- 1. AION MIND -->
+      <div class="relative pb-14">
+        <span class="tl-node lime"></span>
+        <div class="card p-6 md:p-8">
+          <div class="flex flex-wrap items-center gap-3 mb-3">
+            <span class="mono text-[11px] uppercase tracking-[0.16em] text-neon-lime">marzec 2025 — marzec 2026</span>
+            <span class="tag tag-lime">Startup AI</span>
+            <a href="https://aionmind.com/" target="_blank" rel="noopener" class="tag">aionmind.com ↗</a>
+          </div>
+          <h3 class="display text-2xl md:text-3xl font-bold text-white">Product Owner / Chief of Staff</h3>
+          <p class="text-zinc-400 mt-1">AION MIND — Platforma AI: aplikacja B2C, SaaS B2B i kursy online. Zespół 6 osób.</p>
+
+          <p class="mt-4 text-zinc-300 text-[15px] leading-relaxed italic">
+            Skalowanie MRR z <span class="text-lime-glow not-italic font-semibold">18k do 150k PLN (8×)</span>
+            w trzech strumieniach przychodu.
+          </p>
+
+          <ul class="mt-5 space-y-3 text-zinc-300 text-[15px] leading-relaxed">
+            <li class="flex gap-3"><span class="text-neon-lime mono shrink-0">→</span><span><strong class="text-white">Owner end-to-end strumienia kursów online — przychód &gt;1,5 mln PLN</strong> (AI Journaling, MarketingOS, Fundamenty Ofensywy na 22content). Zakres: spinanie kursów z aplikacją, legal, partnerzy wdrożeniowi, QA materiałów, strategia cenowa, mailingi sprzedażowe, support.</span></li>
+            <li class="flex gap-3"><span class="text-neon-lime mono shrink-0">→</span><span><strong class="text-white">Lejek kursy → produkt</strong> — kursanci AI Journaling / MarketingOS / LABA konwertowali na subskrypcje B2C aplikacji (~1000 użytkowników w peak) i deals <strong class="text-white">B2B SaaS (55 klientów enterprise/SME w peak)</strong>.</span></li>
+            <li class="flex gap-3"><span class="text-neon-lime mono shrink-0">→</span><span><strong class="text-white">Wsparcie team Sales jako Product Owner</strong> — onboarding klientów B2B, materiały commercial, retencja/upsell, 10+ calli klienckich, partnerstwo strategiczne z Biznes Ligą Runamageddon.</span></li>
+            <li class="flex gap-3"><span class="text-neon-lime mono shrink-0">→</span><span><strong class="text-white">Partnerstwo strategiczne edu-tech z LABA Tools</strong> — dwa kursy publiczne („Inteligentna Transformacja Biznesu z AI" oraz „Mistrzostwo Mentalne" z Darią Albers). W grudniu 2025 dowiozłem pełną integrację po obu stronach.</span></li>
+            <li class="flex gap-3"><span class="text-neon-lime mono shrink-0">→</span><span><strong class="text-white">Komunikacja na 3000-osobowym Discord</strong>: aplikacja AION + kursy + support; tysiące interakcji wokół premier.</span></li>
+            <li class="flex gap-3"><span class="text-neon-lime mono shrink-0">→</span><span>PRD kluczowych funkcji, flow onboardingu, IA aplikacji mobilnej. Optymalizacja promptów LLM (Langfuse), agent AI budujący kontekst firmowy. Infrastruktura monetyzacji (Stripe + paywall + 30-dniowy trial). Compliance prawny.</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 3. MOBEE DICK -->
+      <div class="relative pb-14">
+        <span class="tl-node"></span>
+        <div class="card p-6 md:p-8">
+          <div class="flex flex-wrap items-center gap-3 mb-3">
+            <span class="mono text-[11px] uppercase tracking-[0.16em] text-neon-cyan">grudzień 2021 — kwiecień 2025</span>
+            <span class="tag tag-cyan">Enterprise B2B</span>
+            <a href="https://www.mobeedick.com/" target="_blank" rel="noopener" class="tag">mobeedick.com ↗</a>
+          </div>
+          <h3 class="display text-2xl md:text-3xl font-bold text-white">Project Manager → General Manager</h3>
+          <p class="text-zinc-400 mt-1">Mobee Dick — Agencja UX. Klienci: banki, ubezpieczyciele, korporacje, e-commerce, sektor publiczny. Przychód roczny ~5 mln PLN, zespół do 25 osób.</p>
+
+          <ul class="mt-5 space-y-3 text-zinc-300 text-[15px] leading-relaxed">
+            <li class="flex gap-3"><span class="text-neon-cyan mono shrink-0">★</span><span><strong class="text-white">Wygrałem przetarg publiczny 14 mln PLN brutto</strong> dla Ministerstwa Finansów (umowa ramowa 2025–2028) — najwyższy wynik, najwyższa cena, pokonanie 2 finalistów. Pełen sales cycle: dokumentacja, case study, strategia cenowa, pitch, multi-stakeholder C-level.</span></li>
+            <li class="flex gap-3"><span class="text-neon-cyan mono shrink-0">→</span><span><strong class="text-white">Wzrost konta MF z 1 mln do 14 mln PLN (14×)</strong> dzięki konsekwentnemu dowożeniu i bezpośredniemu budowaniu relacji. Flagowy projekt: redesign UX <strong class="text-white">podatki.gov.pl</strong> + procesu „Twój ePIT" (1 mln PLN, wybrany spośród ~20 firm) — system używany przez miliony polskich podatników.</span></li>
+            <li class="flex gap-3"><span class="text-neon-cyan mono shrink-0">→</span><span><strong class="text-white">Osobiście sprzedałem projekty enterprise (35–300k PLN per deal)</strong> dla: mBank, BNP Paribas, Allegro.pl, Grupa Pracuj.pl, Philips, Uniqa, Warta, Komputronik, Euro RTV AGD, Smartney, Grupa BLIX.</span></li>
+            <li class="flex gap-3"><span class="text-neon-cyan mono shrink-0">→</span><span><strong class="text-white">Pełna własność cyklu sprzedaży B2B</strong> — analiza briefu, discovery, scoping, pitch, negocjacje, kosztorysy, umowy, close. Upsell i cross-sell w istniejących kontach (Grupa Pracuj.pl: badania, UX writing). <strong class="text-white">CRM: Pipedrive</strong>.</span></li>
+            <li class="flex gap-3"><span class="text-neon-cyan mono shrink-0">→</span><span><strong class="text-white">Przeprojektowałem oferty i format calli sprzedażowych</strong> — z prezentacji procesu przez specjalistów na conversation z interesariuszami; lepsza konwersja enterprise inquiry.</span></li>
+            <li class="flex gap-3"><span class="text-neon-cyan mono shrink-0">→</span><span><strong class="text-white">International B2B sales calls po angielsku</strong> — m.in. AmRest (KFC, Pizza Hut), zrealizowany projekt zagraniczny dla foundera narzędzia do cold textingu (SMS).</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 4. PRZYSTAŃ RADUŃSKA -->
+      <div class="relative pb-14">
+        <span class="tl-node violet"></span>
+        <div class="card p-6 md:p-8">
+          <div class="flex flex-wrap items-center gap-3 mb-3">
+            <span class="mono text-[11px] uppercase tracking-[0.16em] text-neon-violet">wrzesień 2020 — październik 2021</span>
+            <span class="tag" style="color:#FFDD00;border-color:rgba(255,221,0,0.35);background:rgba(255,221,0,0.05)">Własny biznes</span>
+          </div>
+          <h3 class="display text-2xl md:text-3xl font-bold text-white">Założyciel i operator</h3>
+          <p class="text-zinc-400 mt-1">Przystań Raduńska — Chmielno, Kaszuby</p>
+          <p class="mt-4 text-zinc-300 text-[15px] leading-relaxed">
+            Zbudowałem i prowadziłem kawiarnię od zera — od remontu lokalu i projektu wnętrza,
+            przez szkolenie baristyczne, po codzienne operacje.
+            <strong class="text-white">Rentowny biznes sezonowy</strong> na Kaszubach.
+          </p>
+          <p class="mt-3 text-zinc-400 text-[15px] leading-relaxed">
+            Jednocześnie świadomy <strong class="text-white">zawodowy gap year</strong> — czas na szukanie własnego
+            <em class="text-white not-italic font-medium">„why"</em> i intensywne czytanie.
+          </p>
+        </div>
+      </div>
+
+      <!-- 5. RIO CREATIVO -->
+      <div class="relative pb-14">
+        <span class="tl-node"></span>
+        <div class="card p-6 md:p-8">
+          <div class="flex flex-wrap items-center gap-3 mb-3">
+            <span class="mono text-[11px] uppercase tracking-[0.16em] text-neon-cyan">wrzesień 2017 — wrzesień 2020</span>
+            <a href="https://riocreativo.pl/" target="_blank" rel="noopener" class="tag">riocreativo.pl ↗</a>
+          </div>
+          <h3 class="display text-2xl md:text-3xl font-bold text-white">Senior Manager / Project Manager</h3>
+          <p class="text-zinc-400 mt-1">Rio Creativo — Agencja brandingowa, Słupsk</p>
+          <ul class="mt-5 space-y-3 text-zinc-300 text-[15px] leading-relaxed">
+            <li class="flex gap-3"><span class="text-neon-cyan mono shrink-0">→</span><span>Prowadziłem projekty brandingowe end-to-end w małej agencji: warsztaty strategiczne, prezentacje klienckie, <strong class="text-white">oferty, wyceny, sprzedaż i realizacja</strong> — łącząc role PM-a, sprzedawcy i stratega.</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 6. ARKA -->
+      <div class="relative pb-14">
+        <span class="tl-node muted"></span>
+        <div class="card p-6 md:p-8">
+          <div class="flex flex-wrap items-center gap-3 mb-3">
+            <span class="mono text-[11px] uppercase tracking-[0.16em] text-zinc-400">październik 2019 — kwiecień 2020</span>
+            <span class="tag">równolegle</span>
+            <span class="tag">C-level</span>
+          </div>
+          <h3 class="display text-2xl md:text-3xl font-bold text-white">Konsultant zarządu ds. marketingu</h3>
+          <p class="text-zinc-400 mt-1">Asseco Arka Gdynia — Koszykówka zawodowa (Ekstraklasa)</p>
+          <ul class="mt-5 space-y-3 text-zinc-300 text-[15px] leading-relaxed">
+            <li class="flex gap-3"><span class="text-zinc-500 mono shrink-0">→</span><span>Współpraca <strong class="text-white">C-level</strong> z Wiceprezesem Asseco (Przemysław Sęczkowski): audyt marki, plan marketingowy, <strong class="text-white">restrukturyzacja oferty sponsorskiej</strong>, nowy operator biletowy. Efekt: wzrost frekwencji, nowe partnerstwa sponsorskie (przerwane przez COVID-19).</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 7. CZARNI -->
+      <div class="relative">
+        <span class="tl-node muted"></span>
+        <div class="card p-6 md:p-8">
+          <div class="flex flex-wrap items-center gap-3 mb-3">
+            <span class="mono text-[11px] uppercase tracking-[0.16em] text-zinc-400">marzec 2012 — wrzesień 2017</span>
+            <span class="tag">5,5 roku</span>
+          </div>
+          <h3 class="display text-2xl md:text-3xl font-bold text-white">Marketing &amp; Media Manager</h3>
+          <p class="text-zinc-400 mt-1">Energa Czarni Słupsk — Koszykówka zawodowa (Ekstraklasa)</p>
+          <ul class="mt-5 space-y-3 text-zinc-300 text-[15px] leading-relaxed">
+            <li class="flex gap-3"><span class="text-zinc-500 mono shrink-0">→</span><span><strong class="text-white">Zarządzałem sponsoringiem tytułowym</strong> z Energa S.A. (kilka mln PLN rocznie) i bezpośrednio pozyskiwałem nowych sponsorów (wieloletnia sprzedaż B2B w sponsoringu).</span></li>
+            <li class="flex gap-3"><span class="text-zinc-500 mono shrink-0">→</span><span>Zorganizowałem <strong class="text-white">rekord Guinnessa hałasu w zamkniętej hali</strong> — kibice Czarnych Słupsk osiągnęli <strong class="text-white">129,6 dB</strong> (marzec 2014). Najgłośniejsza hala w Polsce; zasięg medialny krajowy i międzynarodowy.</span></li>
+            <li class="flex gap-3"><span class="text-zinc-500 mono shrink-0">→</span><span>Rekordowa kampania crowdfundingowa: <strong class="text-white">300 000+ PLN zebrane w 3 tygodnie</strong> na fans4club (2017).</span></li>
+            <li class="flex gap-3"><span class="text-zinc-500 mono shrink-0">→</span><span>Prowadziłem wszystkie kanały cyfrowe, relacje z mediami, ticketing i kampanie promocyjne. <strong class="text-white">Rebranding Roku</strong> (nagroda branżowa).</span></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================ CLIENTS ============================ -->
+<section id="clients" class="relative py-20 md:py-28 border-t border-white/5">
+  <div class="max-w-7xl mx-auto px-6 md:px-10">
+    <span class="section-label">/ Konteksty i partnerzy</span>
+    <h2 class="display text-3xl md:text-4xl font-bold mt-5 mb-10 leading-tight tracking-tight">
+      Sport · event · enterprise.
+    </h2>
+    <div class="flex flex-wrap gap-3">
+      <span class="client-badge">Runmageddon · Biznes Liga</span>
+      <span class="client-badge">Energa S.A. / Czarni Słupsk</span>
+      <span class="client-badge">Asseco Arka Gdynia</span>
+      <span class="client-badge">Mobee Dick UX</span>
+      <span class="client-badge">AION MIND</span>
+      <span class="client-badge">mBank</span>
+      <span class="client-badge">BNP Paribas</span>
+      <span class="client-badge">Allegro.pl</span>
+      <span class="client-badge">Grupa Pracuj.pl</span>
+      <span class="client-badge">Philips</span>
+      <span class="client-badge">Uniqa</span>
+      <span class="client-badge">Warta</span>
+      <span class="client-badge">Komputronik</span>
+      <span class="client-badge">Euro RTV AGD</span>
+      <span class="client-badge">Smartney</span>
+      <span class="client-badge">Grupa BLIX</span>
+      <span class="client-badge">AmRest <span class="text-zinc-500 text-xs ml-2">KFC · Pizza Hut</span></span>
+      <span class="client-badge">Ministerstwo Finansów</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ SKILLS / STACK ============================ -->
+<section id="stack" class="relative py-24 md:py-32 border-t border-white/5">
+  <div class="max-w-7xl mx-auto px-6 md:px-10">
+    <span class="section-label">/ 04 — Kompetencje &amp; narzędzia</span>
+    <h2 class="display text-4xl md:text-5xl font-bold mt-5 mb-14 leading-tight tracking-tight">
+      PM, eventy i&nbsp;<span class="text-cyan-glow">narzędzia</span> na co dzień.
+    </h2>
+
+    <div class="grid md:grid-cols-2 gap-5">
+      <!-- Sales -->
+      <article class="card p-7">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="display text-xl font-semibold text-white">Zarządzanie projektami</h3>
+          <span class="mono text-[11px] text-neon-cyan">/ PM</span>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <span class="tag">Planowanie i harmonogramy</span>
+          <span class="tag">Koordynacja wielu zespołów</span>
+          <span class="tag">Zarządzanie ryzykiem</span>
+          <span class="tag">Raportowanie postępów</span>
+          <span class="tag">Eventy i marketing sportowy</span>
+          <span class="tag">Sponsoring i ticketing</span>
+          <span class="tag">Kampanie promocyjne</span>
+          <span class="tag">Relacje z mediami</span>
+          <span class="tag">Zamówienia publiczne</span>
+        </div>
+      </article>
+
+      <!-- Edu products -->
+      <article class="card p-7">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="display text-xl font-semibold text-white">Marketing i eventy</h3>
+          <span class="mono text-[11px] text-neon-lime">/ sport</span>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <span class="tag tag-lime">Imprezy masowe</span>
+          <span class="tag">Organizacja produkcji</span>
+          <span class="tag">Partnerzy i podwykonawcy</span>
+          <span class="tag">Sprzedaż B2B sponsoring</span>
+          <span class="tag">CSR i community</span>
+          <span class="tag">Kampanie crowdfundingowe</span>
+        </div>
+      </article>
+
+      <!-- Narzędzia PM -->
+      <article class="card p-7 md:col-span-2">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="display text-xl font-semibold text-white">Narzędzia PM</h3>
+          <span class="mono text-[11px] text-neon-cyan">/ daily</span>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <span class="tag tag-cyan">Asana</span>
+          <span class="tag">ClickUp</span>
+          <span class="tag">Figma</span>
+          <span class="tag">Google Workspace</span>
+          <span class="tag">Slack</span>
+          <span class="tag">Tally.so</span>
+          <span class="tag">Canva</span>
+          <span class="tag">Pipedrive</span>
+        </div>
+      </article>
+
+      <!-- CRM -->
+      <article class="card p-7">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="display text-xl font-semibold text-white">Operacje &amp; leadership</h3>
+          <span class="mono text-[11px] text-zinc-500">/ tools</span>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <span class="tag tag-cyan">Asana</span>
+          <span class="tag">ClickUp</span>
+          <span class="tag">Slack</span>
+          <span class="tag">Discord</span>
+          <span class="tag">Google Workspace</span>
+        </div>
+      </article>
+
+      <!-- Ops -->
+      <article class="card p-7">
+        <div class="flex items-center justify-between mb-4">
+          <h3 class="display text-xl font-semibold text-white">Operacje &amp; Zarządzanie</h3>
+          <span class="mono text-[11px] text-zinc-500">/ leadership</span>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <span class="tag">Zespoły międzyfunkcyjne (do 25 os.)</span>
+          <span class="tag">P&amp;L</span>
+          <span class="tag">Procesy</span>
+          <span class="tag">Zarządzanie interesariuszami</span>
+          <span class="tag">Kultura otwartego feedbacku</span>
+          <span class="tag">Matryce kompetencji</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ EDUCATION + LANGUAGES ============================ -->
+<section class="relative py-20 md:py-28 border-t border-white/5">
+  <div class="max-w-7xl mx-auto px-6 md:px-10 grid md:grid-cols-12 gap-10">
+    <!-- Education -->
+    <div class="md:col-span-7">
+      <span class="section-label">/ Wykształcenie</span>
+      <h2 class="display text-3xl md:text-4xl font-bold mt-5 mb-10 leading-tight tracking-tight">Akademickie tło.</h2>
+
+      <div class="space-y-4">
+        <article class="card p-6 flex gap-5 items-start">
+          <span class="mono text-[11px] text-neon-cyan shrink-0 pt-1">2012—13</span>
+          <div>
+            <p class="display text-lg font-semibold text-white">Studia podyplomowe — Marketing i PR w Internecie</p>
+            <p class="text-zinc-400 text-sm mt-1">WSAiB im. E. Kwiatkowskiego · Gdynia</p>
+          </div>
+        </article>
+        <article class="card p-6 flex gap-5 items-start">
+          <span class="mono text-[11px] text-neon-cyan shrink-0 pt-1">2010—12</span>
+          <div>
+            <p class="display text-lg font-semibold text-white">Magister — Marketing i PR w Internecie</p>
+            <p class="text-zinc-400 text-sm mt-1">Politechnika Gdańska · Gdańsk</p>
+          </div>
+        </article>
+        <article class="card p-6 flex gap-5 items-start">
+          <span class="mono text-[11px] text-neon-cyan shrink-0 pt-1">2007—10</span>
+          <div>
+            <p class="display text-lg font-semibold text-white">Licencjat — Marketing i e-commerce</p>
+            <p class="text-zinc-400 text-sm mt-1">Uniwersytet Szczeciński · Szczecin</p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- Languages -->
+    <div class="md:col-span-5">
+      <span class="section-label">/ Języki</span>
+      <h2 class="display text-3xl md:text-4xl font-bold mt-5 mb-10 leading-tight tracking-tight">Komunikacja.</h2>
+
+      <div class="space-y-4">
+        <article class="card p-6">
+          <div class="flex items-baseline justify-between mb-3">
+            <p class="display text-lg font-semibold text-white">Polski</p>
+            <span class="mono text-xs text-zinc-400">Ojczysty</span>
+          </div>
+          <div class="flex gap-1.5">
+            <span class="lang-dot on"></span>
+            <span class="lang-dot on"></span>
+            <span class="lang-dot on"></span>
+            <span class="lang-dot on"></span>
+            <span class="lang-dot on"></span>
+          </div>
+        </article>
+
+        <article class="card p-6">
+          <div class="flex items-baseline justify-between mb-3">
+            <p class="display text-lg font-semibold text-white">Angielski</p>
+            <span class="mono text-xs text-neon-cyan">B2</span>
+          </div>
+          <div class="flex gap-1.5 mb-3">
+            <span class="lang-dot on"></span>
+            <span class="lang-dot on"></span>
+            <span class="lang-dot on"></span>
+            <span class="lang-dot on"></span>
+            <span class="lang-dot"></span>
+          </div>
+          <p class="text-sm text-zinc-400">International B2B sales calls — m.in. AmRest, projekty zagraniczne dla founderów.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ CONTACT CTA ============================ -->
+<section id="contact" class="relative py-28 md:py-36 border-t border-white/5 overflow-hidden">
+  <div class="absolute inset-0 bg-grid bg-grid-fade opacity-50"></div>
+  <div class="absolute inset-x-0 -top-40 h-80 pointer-events-none" style="background: radial-gradient(50% 60% at 50% 50%, rgba(255,221,0,0.18), transparent 70%);"></div>
+
+  <div class="relative max-w-5xl mx-auto px-6 md:px-10 text-center">
+    <span class="section-label justify-center" style="display:inline-flex;">/ 05 — Kontakt</span>
+    <h2 class="display font-bold text-[clamp(40px,8vw,96px)] leading-[0.95] tracking-tighter mt-6 mb-8">
+      Aplikacja <br/>
+      <span class="text-cyan-glow">Runmageddon</span> PM.
+    </h2>
+    <p class="text-xl text-zinc-300 max-w-2xl mx-auto mb-12 leading-snug">
+      CV w załączeniu · mail lub LinkedIn. Ogłoszenie: rekrutacja@runmageddon.pl
+    </p>
+
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+      <a href="mailto:matekaz@outlook.com" class="inline-flex items-center gap-3 px-7 py-4 rounded-full bg-neon-cyan text-[#0F0F10] font-semibold tracking-tight hover:shadow-[0_0_40px_rgba(255,221,0,0.6)] transition">
+        matekaz@outlook.com
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17 17 7M9 7h8v8"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/combomanager/" target="_blank" rel="noopener" class="inline-flex items-center gap-3 px-7 py-4 rounded-full border border-white/15 text-white hover:border-neon-cyan/60 transition">
+        LinkedIn /in/combomanager
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17 17 7M9 7h8v8"/></svg>
+      </a>
+      <a href="tel:+48732186476" class="inline-flex items-center gap-3 px-7 py-4 rounded-full border border-white/15 text-white hover:border-neon-cyan/60 transition">
+        +48 732 186 476
+      </a>
+    </div>
+
+    <div class="mt-16 flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-zinc-500 mono text-[11px] uppercase tracking-[0.18em]">
+      <span class="text-neon-lime">Dostępny od zaraz</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ FOOTER ============================ -->
+<footer class="border-t border-white/5 py-10">
+  <div class="max-w-7xl mx-auto px-6 md:px-10 flex flex-col md:flex-row items-center justify-between gap-4">
+    <p class="mono text-[11px] uppercase tracking-[0.18em] text-zinc-600">
+      © 2026 Mateusz Kaźmierczak — Runmageddon · CV.html
+    </p>
+    <p class="mono text-[11px] uppercase tracking-[0.18em] text-zinc-600">
+      v.2026.05 · fork portfolio · #FFDD00 / #0F0F10
+    </p>
+  </div>
+</footer>
+
+<script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>

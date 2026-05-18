@@ -8,7 +8,7 @@ Polska | matekaz@outlook.com | +48 732 186 476 | [linkedin.com/in/combomanager](
 
 ## PODSUMOWANIE ZAWODOWE
 
-Manager i lider operacji z 14-letnim doświadczeniem w koordynacji projektów od planowania po realizację — w sporcie, marketingu, agencjach i startupie. 6 lat w ekstraklasie koszykówki (Energa Czarni Słupsk 5,5 roku + Asseco Arka Gdynia): imprezy masowe (Rekord Guinnessa 129,6 dB), sponsoring, ticketing i kampanie. W agencji UX zarządzałem do 25 osób i 3–4 projektami enterprise równolegle; wygrałem przetarg na 14 mln PLN dla Ministerstwa Finansów. W AION: wzrost skali operacji **8×** w 12 miesięcy. Łączę planowanie z egzekucją pod presją terminów i wielu interesariuszy. Najlepiej działam w dynamicznym środowisku, gdzie liczy się porządek w procesach i przepływ informacji między zespołami.
+Manager i lider operacji z 14-letnim doświadczeniem w koordynacji projektów od planowania po realizację — w sporcie, marketingu, agencjach i startupie. 6 lat w ekstraklasie koszykówki (Energa Czarni Słupsk 5,5 roku + Asseco Arka Gdynia): imprezy masowe (Rekord Guinnessa 129,6 dB), sponsoring, ticketing i kampanie. W agencji UX zarządzałem do 25 osób i 3–4 projektami enterprise równolegle; wygrałem przetarg na 14 mln PLN dla Ministerstwa Finansów. W AION: wzrost skali operacji **8×** w 12 miesięcy. Łączę planowanie z realizacją pod presją terminów i wielu interesariuszy. Najlepiej działam w dynamicznym środowisku, gdzie liczy się porządek w procesach i przepływ informacji między zespołami.
 
 ---
 
@@ -17,11 +17,11 @@ Manager i lider operacji z 14-letnim doświadczeniem w koordynacji projektów od
 ### AION MIND — Startup (aplikacja B2C · SaaS B2B · kursy online)
 **Product Owner / Chief of Staff** | marzec 2025 – marzec 2026
 
-Koordynowałem delivery produktu i współpracę zespołu 6 osób (deweloperzy, UX, specjaliści) w okresie intensywnych premier — wzrost skali operacji **8×** w 12 miesięcy.
+Koordynowałem wdrożenie produktu i współpracę zespołu 6 osób (deweloperzy, UX, specjaliści) w okresie intensywnych premier — wzrost skali operacji **8×** w 12 miesięcy.
 
 - Koordynowałem pracę zespołów produktu, sprzedaży i wsparcia przy trzech strumieniach działań (B2C, B2B, kursy online) — harmonogramy, priorytety i raportowanie postępów pod presją terminów
-- Prowadziłem komunikację z klientami B2B (10+ calli), pętle feedbacku (ankiety, Tally.so) i wsparcie społeczności 3000 osób na Discord podczas premier
-- Koordynowałem compliance prawny (polityka prywatności, regulamin) oraz negocjacje partnerstwa z Biznes Ligą Runamageddon (umowa barterowa w przygotowaniu)
+- Prowadziłem komunikację z klientami B2B (10+ rozmów), zbieranie opinii klientów (ankiety, Tally.so) i wsparcie społeczności 3000 osób na Discord podczas premier
+- Koordynowałem zgodność prawną (polityka prywatności, regulamin) oraz negocjacje partnerstwa z Biznes Ligą Runamageddon (umowa barterowa w przygotowaniu)
 
 ---
 
@@ -32,23 +32,23 @@ Prowadziłem operacje jednej z rozpoznawalnych polskich agencji UX. Klienci ente
 
 - Wygrałem przetarg publiczny na 14 mln PLN brutto dla Ministerstwa Finansów (umowa ramowa 2025–2028) — poprowadziłem cały proces od zera: dokumentacja przetargowa, case study, strategia cenowa, złożenie oferty. Najwyższy wynik, najwyższa cena. Pokonanie 2 finalistów.
 - Zbudowałem relację z klientem rządowym, która przełożyła się na wzrost wartości kontraktu z 1 mln do 14 mln PLN (14× wzrost) dzięki konsekwentnemu dowożeniu i bezpośredniemu budowaniu relacji, w tym wizytom w Ministerstwie
-- Poprowadziłem redesign UX portalu podatki.gov.pl i procesu „Twój ePIT" (projekt za 1 mln PLN, wybrany spośród ~20 firm). Przekształcenie procesu, w którym użytkownicy nie mogli samodzielnie złożyć deklaracji, w self-service — system używany przez miliony polskich podatników
+- Poprowadziłem redesign UX portalu podatki.gov.pl i procesu „Twój ePIT" (projekt za 1 mln PLN, wybrany spośród ~20 firm). Przekształcenie procesu, w którym użytkownicy nie mogli samodzielnie złożyć deklaracji, w obsługę samoobsługową — system używany przez miliony polskich podatników
 - Zarządzałem 3-4 projektami UX enterprise równolegle dla klientów z sektorów bankowego, ubezpieczeniowego i korporacyjnego z Polski i rynków zagranicznych
-- Przeprojektowałem pipeline sprzedażowy agencji — od metodyki wyceny, przez tworzenie ofert, po pitch kliencki — poprawiając konwersję na zapytaniach enterprise
+- Przeprojektowałem proces sprzedaży agencji — od metodyki wyceny, przez tworzenie ofert, po pitch kliencki — poprawiając konwersję na zapytaniach od dużych klientów
 
 ---
 
 ### PRZYSTAŃ RADUŃSKA — Własna działalność
 **Założyciel i operator** | wrzesień 2020 – październik 2021
 
-Zbudowałem i prowadziłem kawiarnię od zera w Chmielnie na Kaszubach — od remontu lokalu i projektu wnętrza, przez szkolenie baristyczne, po codzienne operacje. Rentowny biznes sezonowy. Świadomy zawodowy gap year — czas na szukanie własnego „why”.
+Zbudowałem i prowadziłem kawiarnię od zera w Chmielnie na Kaszubach — od remontu lokalu i projektu wnętrza, przez szkolenie baristyczne, po codzienne operacje. Rentowny biznes sezonowy. Świadoma zawodowa przerwa — czas na przemyślenie kolejnego kroku.
 
 ---
 
 ### RIO CREATIVO — Agencja brandingowa
 **Senior Manager / Project Manager** | wrzesień 2017 – wrzesień 2020
 
-- Prowadziłem projekty brandingowe end-to-end w małej agencji: warsztaty strategiczne, prezentacje klienckie, oferty, wyceny i realizacja projektów — łącząc role PM-a, sprzedawcy i stratega
+- Prowadziłem projekty brandingowe od strategii po realizację w małej agencji: warsztaty strategiczne, prezentacje klienckie, oferty, wyceny i realizacja projektów — łącząc role PM-a, sprzedawcy i stratega
 
 ---
 
